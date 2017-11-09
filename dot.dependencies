@@ -20,6 +20,10 @@
     "target_path": "packages/resources/devicesettings"
   },
   {
+    "repository": "proprietary_vendor_huawei",
+    "target_path": "vendor/huawei"
+  },  
+  {
     "repository": "android_packages_apps_FlipFlap",
     "target_path": "packages/apps/FlipFlap"
   }
