@@ -177,5 +177,17 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 TARGET_USES_QCOM_WCNSS_QMI := true
 TARGET_USES_WCNSS_CTRL := true
 
+# Snapdragon LLVM
+TARGET_USE_SDCLANG := true
+ifneq ($(HOST_OS),darwin)
+    SDCLANG := true
+    SDCLANG_PATH := prebuilts/clang/linux-x86/host/sdclang-3.8/bin
+    SDCLANG_LTO_DEFS := device/qcom/common/sdllvm-lto-defs.mk
+endif
+
+# Optimizations 
+O3_OPTS := true
+GRAPHITE_OPTS := true
+
 # inherit from the proprietary version
 -include vendor/huawei/kiwi/BoardConfigVendor.mk
