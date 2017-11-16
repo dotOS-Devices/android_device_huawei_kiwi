@@ -26,5 +26,9 @@
   {
     "repository": "android_packages_apps_FlipFlap",
     "target_path": "packages/apps/FlipFlap"
-  }
+  },
+  {
+    "repository": "android_prebuilts_snapdragon_llvm-3.8",
+    "target_path": "prebuilts/clang/linux-x86/host/sdclang-3.8"
+  }  
 ]
